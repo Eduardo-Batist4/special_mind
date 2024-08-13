@@ -2,6 +2,9 @@
 # Special Mind
 
 O Special Mind é um software projetado para estimular as capacidades motoras e cognitivas de idosos, com foco na melhoria da função cerebral, da mobilidade e da coordenação motora. Além disso, contribui para a prevenção do declínio cognitivo e físico, promovendo uma maior qualidade de vida e independência para os idosos.
+
+https://eduardo-batist4.github.io/special_mind/
+
 ## Regras
 
 
