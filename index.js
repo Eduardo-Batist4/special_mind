@@ -81,12 +81,14 @@ startBtn.addEventListener('click', () => {
 
             content.textContent = selectedItem;
 
-        }, 1000);
+        }, 3500);
 
         setTimeout(() => {
             clearInterval(time)
-            availableItems = [ ...contentList ];
-        }, 10000);
+            content.textContent = "";
+
+            availableItems = [...contentList];
+        }, 20000);
 
     } 
 });
