@@ -20,7 +20,7 @@ startBtn.addEventListener('click', () => {
 
             availableItems.splice(randomIndex, 1);
 
-            console.log(selectedItem);
+            // console.log(selectedItem);
 
             if(selectedItem === 'amarelo') {
                 content.style.fontSize = '20px'
@@ -81,7 +81,7 @@ startBtn.addEventListener('click', () => {
 
             content.textContent = selectedItem;
 
-        }, 3500);
+        }, 2000);
 
         setTimeout(() => {
             clearInterval(time)
