@@ -8,6 +8,10 @@ html{
     font-size: 62.5%;
 }
 
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .header{
     width: 100%;
     height: 6rem;
@@ -16,51 +20,105 @@ html{
     align-items: center;
     h2{
         font-size: 3rem;
-    }
-}
-.options{
-    width: 100%;
-    height: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .btn{
-        margin: 0 1rem;
+        color: #f58d96;
     }
 }
 
 .main {
     width: 100%;
-    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10rem;
     .text-container{
         width: 90%;
         padding: 1rem 0;
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-top: 5rem;
         text-align: center;
+        p{
+            color: #424242;
+        }
     }
     .options{
         width: 90%;
+        height: auto;
         margin-top: 3rem;
-        .btn{
-            width: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        .difficults{
+            width: 100%;
+            height: 5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fed3d8;
+            border-radius: 1rem;
+            text-transform: uppercase;
+            label{
+                font-size: 2rem;
+                margin-right: 1rem;
+                color: #252525;
+            }
+            .easy-check{
+                width: 1.5rem;
+                height: 2rem;
+            }
+        }
+        #start-btn{
+            width: 20rem;
             padding: 1rem 0;
             font-weight: bold;
             border: none;
-            background-color: palevioletred;
+            background-color: #f58d96;
             color: white;
             box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.342);
-            a{
-                color: white;
-                text-decoration: none;
-            }
+            font-size: 2.5rem;
+            text-transform: uppercase;
             &:hover{
                 transition: 200ms ease-in-out;
                 transform: scale(1.02);
             }
+        }
+    }
+    .content-container{
+        width: 90%;
+        height: 70vh;
+        margin-top: 3rem;
+        background-color: #fed3d8;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.footer{
+    width: 100%;
+    height: 3rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 1.5rem;
+        color: #929292;
+    }
+}
+
+// Breakpoints
+@media (min-width: 1024px) and (max-width: 1920px) {
+    .main{
+        .text-container{
+            width: 70%;
+        }
+        .options{
+            width: 70%;
+        }
+        .content-container{
+            width: 70%;
         }
     }
 }
