@@ -20,7 +20,7 @@ startBtn.addEventListener('click', () => {
 
             availableItems.splice(randomIndex, 1);
 
-            // console.log(selectedItem);
+            console.log(selectedItem);
 
             if(selectedItem === 'amarelo') {
                 content.style.fontSize = '20px'
@@ -67,28 +67,32 @@ startBtn.addEventListener('click', () => {
                 content.style.backgroundColor = 'green'
                 content.style.textTransform = 'uppercase'
             } else if(typeof selectedItem === 'number') {
-                content.style.fontSize = '100px'
+                content.style.fontSize = '200px'
                 content.style.color = 'black'
                 content.style.backgroundColor = 'transparent'
                 content.style.textAlign = 'center'
+                content.style.fontFamily = 'Concert One, sans-serif';
+                content.style.fontWeight = 400;
             }
             else {
-                 content.style.fontSize = '50px'
-                 content.style.color = 'black'
-                 content.style.backgroundColor = 'transparent'
-                 content.style.textAlign = 'center'
+                content.style.fontSize = '50px'
+                content.style.color = 'black'
+                content.style.backgroundColor = 'transparent'
+                content.style.textAlign = 'center'
+                content.style.fontFamily = 'Concert One, sans-serif';
+                content.style.fontWeight = 400;
             }
 
             content.textContent = selectedItem;
 
-        }, 2000);
+        }, 3000);
 
         setTimeout(() => {
-            clearInterval(time)
             content.textContent = "";
+            clearInterval(time)
 
             availableItems = [...contentList];
-        }, 20000);
+        }, 32000);
 
     } 
 });
